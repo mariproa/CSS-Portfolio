@@ -1,0 +1,925 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+/* hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+} */
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Aquí comienza mi proyecto
+   ========================================================================== */
+
+body {
+  background-color: #151515;
+  font-family: "Space Grotesk", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-redes {
+  padding: 20px 110px 49px 110px;
+  text-align: center;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 25.6px;
+  margin-top: 20px;
+}
+
+.redes, .green {
+  width: 19px;
+}
+
+.green {
+  display: none;
+}
+
+.redes-sociales a:hover .green {
+  display: inline-block;
+}
+
+.redes-sociales a:hover .redes {
+  display: none;
+}
+
+.hero-img {
+  padding: 0 100px;
+}
+
+.circle {
+  display: none;
+}
+
+header {
+  background-image: url("/img/pentagrama-redondo.png"), url("/img/circle.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left -140px top 114px, right -65px top 242px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  background-color: #242424;
+  width: 174.45px;
+  height: 373px;
+  top: 0;
+  transform: translate(-50%, 0%);
+  z-index: -1;
+}
+
+.header-text {
+  margin-top: 40px;
+  padding: 0 16px;
+  text-align: center;
+}
+
+h1, .h1-title {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: -1.14px;
+}
+
+.h1-tablet {
+  display: none;
+}
+
+.subrayado {
+  text-decoration: underline;
+  text-decoration-color: #4EE1A0;
+  text-decoration-thickness: 4px;
+}
+
+.header-text p {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #d9d9d9;
+}
+
+.header-text a, .proyectos-title a, article a, .button-send-message a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-text a:hover, .proyectos-title a:hover, article a:hover, .button-send-message a:hover {
+  color: #4EE1A0;
+}
+
+.button {
+  display: inline-flex;
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: bold;
+  letter-spacing: 2.29px;
+  height: 38px;
+  border-bottom: 2px solid #4EE1A0;
+}
+
+.container-main {
+  padding: 0 16px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.lenguajes {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+  padding: 40px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin-bottom: 80px;
+}
+
+.lenguajes h2 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.lenguajes p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #d9d9d9;
+}
+
+.pentagrama-girado {
+  position: absolute;
+  transform: rotate(180deg);
+  right: -139px;
+  top: 535px;
+}
+
+.proyectos-title {
+  display: flex;
+  justify-content: center;
+  gap: 71px;
+  margin-bottom: 2px;
+}
+
+.proyectos {
+  display: flex;
+  flex-direction: column;
+}
+
+.proyectos article {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.proyectos article a {
+  pointer-events: none;
+}
+
+.proyectos article img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+article span {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #d9d9d9;
+  margin-right: 18px;
+}
+
+article .botones {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+footer {
+  background-color: #242424;
+  margin-top: 40px;
+  padding-top: 60px;
+}
+
+.contact {
+  padding: 0 16px;
+}
+
+.contact-header {
+  text-align: center;
+}
+
+.contact-header p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #d9d9d9;
+  margin: 0;
+  margin-top: 29px;
+  margin-bottom: 50px;
+}
+
+.contact {
+  position: relative;
+}
+
+.contact-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contact-form input {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  letter-spacing: -0.22px;
+  color: white;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 16px 24px;
+  background-color: #242424;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.contact-form input:last-of-type {
+  padding-bottom: 80px;
+}
+
+.contact-form input:focus {
+  outline: none;
+  border-bottom: 1px solid #4EE1A0;
+}
+
+.error-message {
+  position: absolute;
+  right: 0;
+  top: 120px;
+  display: none;
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.17px;
+  color: #ff6f5b;
+}
+
+.contact-form input:invalid {
+  border-bottom: 1px solid #ff6f5b;
+}
+
+.contact-form input:invalid + .error-message {
+  display: block;
+}
+
+.img-footer-desktop {
+  display: none;
+}
+
+.img-footer-mobile {
+  position: absolute;
+  left: -140px;
+  top: 386px;
+}
+
+hr {
+  margin: 0;
+  color: white;
+  border: none;
+  height: 1px;
+  background-color: white;
+}
+
+.button-send-message {
+  display: flex;
+  justify-content: end;
+}
+
+.hr-footer {
+  margin: 87px 16px 0 16px;
+}
+
+.logo-redes-footer {
+  padding: 39px 110px 60px 110px;
+  text-align: center;
+}
+
+
+
+
+
+
+/* Media Query para Tablet Vertical (768px) */
+@media (min-width: 768px) {
+  .logo-redes {
+    padding: 29px 30px 66px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logotipo {
+    height: 32px;
+  }
+
+  .redes-sociales {
+    margin: 0;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .redes-sociales img {
+    width: 25px;
+    height: 25px;
+  }
+
+  header {
+    margin-bottom: 60px;
+    position: relative;
+    background-image: url("/img/pentagrama-redondo.png");
+    background-repeat: no-repeat;
+    background-position: left -65px top 75px;
+  }
+
+  header::after {
+    width: 329.3px;
+    height: 586px;
+    transform: none;
+    right: 0;
+  }
+
+  .circle {
+    display: block;
+    position: absolute;
+    right: -65px;
+    top: 456px;
+  }
+
+  .img-header-text {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .hero-img {
+    height: 458px;
+    padding: 0;
+  }
+
+  .header-text {
+    padding: 13px 0 0px 32px;
+    text-align: left;
+    margin: 0;
+    margin-right: -36px;
+  }
+  
+  h1, .h1-title {
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -3.05px;
+  }
+
+  .h1-mobile {
+    display: none;
+  }
+
+  .h1-tablet {
+    display: block;
+  }
+  
+  .subrayado {
+    text-decoration-thickness: 6px;
+    display: inline-block;
+    margin-top: 11px;
+  }
+  
+  .header-text p {
+    margin-top: 60px;
+    margin-bottom: 34px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.14px;
+  }
+
+  .container-main {
+    padding: 0 30px;
+  }
+  
+  .lenguajes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 7px;
+    text-align: left;
+    border-bottom: none;
+    margin-bottom: 100px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .lenguajes div {
+    width: 343px;
+    margin-top: 52px;
+  }
+
+  .lenguajes h2 {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+  }
+  
+  .lenguajes p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 14px;
+  }
+
+  .pentagrama-girado {
+    right: -124px;
+    top: 400px;
+  }
+  
+  .proyectos-title {
+    justify-content: space-between;
+    margin-bottom: 60px;
+    align-items: center;
+  }
+  
+  .proyectos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .proyectos article {
+    width: 342px;
+  }
+  
+  footer {
+    margin-top: 60px;
+  }
+  
+  .contact {
+    padding: 0 161px;
+  }
+  
+  .contact-header p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 20px;
+    margin-bottom: 48px;
+  }
+  
+  .img-footer-mobile {
+    left: -165px;
+    top: 480px;
+  }
+  
+  .hr-footer {
+    margin: 92px 31px 30px 31px;
+  }
+  
+  .logo-redes-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 40px 30px;
+  }
+  
+}
+
+
+
+
+
+/* Media Query para Desktop (1440px) */
+@media (min-width: 1440px) {
+  .logo-redes {
+    padding: 39px 194.51px 0 165px;
+  }
+
+  header {
+    margin-bottom: 104px;
+    background-image: url("/img/pentagrama-desktop.png");
+    background-repeat: no-repeat;
+    background-position: left 0 top 133px;
+  }
+
+  header::after {
+    width: 445px;
+    height: 720px;
+    right: 165px;
+  }
+
+  .img-header-text {
+    margin-top: 70px;
+    padding: 0 165px;
+  }
+
+  .circle {
+    display: block;
+    position: absolute;
+    transform: translate(-610px, 70px);
+  }
+
+  .hero-img {
+    height: 618px;
+  }
+
+  .header-text {
+    padding: 0;
+    margin-top: 57px;
+    margin-right: -42px;
+  }
+  
+  h1, .h1-title {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+  }
+
+  .h1-mobile {
+    display: block;
+  }
+
+  .h1-tablet {
+    display: none;
+  }
+  
+  .header-text p {
+    margin-top: 43px;
+    margin-bottom: 66px;
+    letter-spacing: 0;
+    width: 445px;
+  }
+
+  .container-main {
+    padding: 0 165px;
+  }
+  
+  .lenguajes {
+    gap: 30px;
+    padding-top: 72px;
+    margin-bottom: 82px;
+  }
+
+  .lenguajes div {
+    width: 345px;
+    margin-bottom: 58px;
+    margin-top: 0;
+  }
+
+  .pentagrama-girado {
+    right: -34px;
+    top: 280px;
+  }
+  
+  .proyectos-title {
+    margin-bottom: 80px;
+  }
+  
+  .proyectos {
+    gap: 30px;
+  }
+
+  .proyectos article {
+    width: 540px;
+    position: relative;
+  }
+
+  .proyectos article a {
+    pointer-events: all;
+  }
+
+  .proyectos article .botones {
+    display: none;
+  }
+  
+  .proyectos article:hover a img {
+    opacity: 25%;
+  }
+
+  .proyectos article:hover .botones {
+    display: block;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 118px;
+    left: 201px;
+    gap: 48px;
+    pointer-events: auto;
+  }
+
+  footer {
+    margin-top: 99px;
+  }
+  
+  .contact {
+    padding: 0 165px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-header {
+    text-align: left;
+  }
+  
+  .contact-header p {
+    margin-top: 36px;
+    width: 445px;
+  }
+
+  .contact-form {
+    width: 445px;
+  }
+  
+  .img-footer-mobile {
+    display: none;
+  }
+
+  .img-footer-desktop {
+    display: block;
+    position: absolute;
+    top: 243px;
+    left: -105px;
+  }
+  
+  .hr-footer {
+    margin: 92px 165px 47px 165px;
+  }
+  
+  .logo-redes-footer {
+    padding: 0 165px 92px 165px;
+  }
+
+
+}
+
+  
