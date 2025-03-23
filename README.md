@@ -17,6 +17,6 @@ En esta ocasión, se desarrolló un mini-site con responsive para una web de un 
 - ✅ **Interactividad**: Los elementos interactuables (botones, enlaces, etc.) deben contar con su estado hover.
 - ✅ **Responsive**: Maquetar con mobile first, es decir, empezando desde móvil hacia arriba haciendo uso de media querys.
 
-[Visita el sitio web](https://mariproa.github.io/CSS-Portfolio/)
+[Visita el sitio web](https://css-portfolio.pages.dev/)
 
 

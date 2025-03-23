@@ -351,12 +351,20 @@ h1, .h1-title {
   color: #d9d9d9;
 }
 
-.header-text a, .proyectos-title a, article a, .button-send-message a {
+.header-text a,
+.proyectos-title a,
+article a,
+.button-send-message a,
+article .botones a {
   text-decoration: none;
   color: white;
 }
 
-.header-text a:hover, .proyectos-title a:hover, article a:hover, .button-send-message a:hover {
+.header-text a:hover,
+.proyectos-title a:hover,
+article a:hover,
+.button-send-message a:hover,
+article .botones a:hover {
   color: #4EE1A0;
 }
 
@@ -427,10 +435,6 @@ h1, .h1-title {
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
-}
-
-.proyectos article a {
-  pointer-events: none;
 }
 
 .proyectos article img {
